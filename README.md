@@ -1,2 +1,2 @@
-# gauthamkrishna-g.github.io
+# vickymhs.github.io
 My Personal Website
