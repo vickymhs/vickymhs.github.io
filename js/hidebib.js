@@ -28,6 +28,7 @@ function togglebib(paperid)
 function toggleblock(blockId)
 {
    var block = document.getElementById(blockId);
+   console.log("block -- ", block);
    if (block.style.display == 'none') {
     block.style.display = 'block' ;
    } else {
