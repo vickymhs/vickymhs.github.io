@@ -78,7 +78,7 @@
   }
 
   .history-tl-container ul.tl{
-    margin:5% 0;
+    /* margin:2% 0; */
     padding:0;
     display:inline-block;
   }
@@ -90,7 +90,7 @@
     min-height:20%;
     /*background: rgba(255,255,0,0.1);*/
     border-left:1px dashed #86D6FF;
-    padding:0 0 50px 30px;
+    padding:0 0 30px 30px;
     position:relative;
   }
 
@@ -118,8 +118,8 @@
   }
 
   ul.tl li .item-detail{
-  	color:rgba(0,0,0,0.5);
-  	font-size:12px;
+  	color:rgb(0, 0, 0);
+  	font-size:15px;
   }
 
   ul.tl li .item-explain{
@@ -131,7 +131,7 @@
   }
 
   ul.tl li .timestamp{
-  	color: #8D8D8D;
+  	color: rgb(0, 0, 0);
   	position: absolute;
   	width: 50%;
   	left: -55%;
@@ -167,7 +167,8 @@
 
     <center>
     	[ <a href="#experience">Work Experience</a> 
-    	| <a href="#education">Education</a>  
+    	| <a href="#education">Education</a>
+      | <a href="#skills">Skills</a>  
     	| <a href="#publications">Publications</a>  
     	| <a href="#projects">Projects</a> 
     	| <a href="#honorsandawards">Honors & Awards</a> 
@@ -201,25 +202,22 @@
     </td>
     <td width="68%" valign="top" align="justify">
     <p class="intro">
-      I am Vignesh Muthukumar, pursuing my Masters in Computer Science from the <a href="https://www.csc.ncsu.edu/index.php" target="_blank">North Carolina State University</a>. 
-    
-      Being a passionate developer, I have two years of experience working as a Software Engineer at <a href="https://ninjacart.in/" target="_blank">Ninjacart</a> in the SCM-Tech team creating sustainable Last Mile Logistics (LML) products.
-      I am skilled with developing scalable backend systems using <b> Java, Springboot, DropWizard and Apache Kafka </b> and have worked with SQL and NoSQL databases.
+      Hi 👋, I am <b>Vignesh Muthukumar</b>, pursuing my <b>Masters in Computer Science</b> 🎓 from the <a href="https://www.csc.ncsu.edu/index.php" target="_blank"><b>North Carolina State University</b></a>. 
+      I am passionate about developing scalable Software applications blending novel AI methodologies to create systems that are socially impactive.
+      My academic research focuses on <b> Educational AI </b> and <b> Intelligent Tutoring Systems</b>, studying the behavioral patters of student's engagement with academic courses.
+    </p>
+
+    <p>
+    I have about <b>2.5 years</b> of industry experience working as a <b>Software Engineer</b>. I had interned with <a href="https://www.salesforce.com/in/products/commerce-cloud/overview/"> <b>Salesforce</b></a> in Summer 2022 working with the Commerce Cloud Organization.
+    Prior to that, I worked with an e-commerce based startup called <a href="https://ninjacart.in/" target="_blank"><b>Ninjacart</b></a> for over 2 years, in their SCM-Tech team creating sustainable Last Mile Logistics (LML) products.
+    </p>
       
-      With a vision to create impact through cutting edge technology, I am actively looking for <b> SDE internship opportunities over Summer 2022 </b>.
+    <p>
+    With a vision to create impact through cutting edge technology, I am actively looking for <b>Software Engineer</b> opportunities.
     </p>
 
     <p>
-      My academic research focuses on leveraging deep learning techniques to develop <b>intelligent learning environments</b> with a long-term goal of providing everyone with quality education in their native language. 
-      I would like to have an interdisciplinary aspect to my research interests with a good mix of theory/applied ML across multiple domains. 
-    </p>
-    
-    <p>
-    	In my time away from research, I play professional cricket, write sports articles and enjoy world movies.
-    </p>
-
-    <p>
-    	Hit me up to discuss interesting things!
+      Away from work, I like to hike ⛰ and bike 🚲. Recently picked up the habit of reading books 📚 and playing piano 🎹. Hit me up to discuss interesting things!
     </p>
 
 	<br>
@@ -227,7 +225,7 @@
 		<center>
 			<a href="javascript:toggleblock('research_keywords')">Few Keywords</a> that might best describe my research interests.
 			<div id="research_keywords" style="display:none">
-				<b>Deep Learning, Machine Learning, NLP, Intelligent Tutor Systems, Algorithms</b>
+				<b>Deep Learning, Machine Learning, Intelligent Tutor Systems, Algorithms</b>
 			</div>
 		</center>
 	</p>
@@ -252,20 +250,67 @@
     
     <div class="history-tl-container">
     	<ul class="tl">
+        <li class="tl-item" ng-repeat="item in retailer_history">
+    			<div class="timestamp">
+    				May 2022 - August 2022
+    				<br> 
+    				San Francisco, California
+    			</div>
+    			
+          <img src="images/salesforce.jpg" alt="Salesforce" style="border-radius:15px; width:100px; margin-bottom: 10px;">
+          <!-- <div class="item-title">Salesforce</div> -->
+          <div class="item-detail"><b>Software Engineer Intern</b></div>
+    			<div class="item-explain">
+    				<p>
+              Primary developer of a Typescript-based Command Line Plugin that stabilizes the configuration and updating of High
+              Scale Runtime Environment Tools used by multiple teams and increases developer productivity by 95%.
+              <br><br>
+              Worked on Java Spring-based micro services with the <b>High Scale Checkout</b> team to redesign the backend architecture 
+              and migrate from OracleDB to a NoSQL database platform that will enable API calls to scale 100 times. 
+    					<br><br>
+              <b>Tech Stack</b>: &nbsp;Typescript, Docker, Java.
+    			</p>
+    			</div>
+    		</li>
+
+        <li class="tl-item" ng-repeat="item in retailer_history">
+    			<div class="timestamp">
+    				Jan 2022 - Present
+    				<br> 
+    				Raleigh, North Carolina
+    			</div>
+    			
+          <img src="images/ncsu.png" alt="NCSU" style="border-radius:15px; width:100px; margin-bottom: 10px;">
+          <!-- <div class="item-title">Salesforce</div> -->
+          <div class="item-detail"><b>Graduate Teaching Assistant, CSC216 - Software Development Fundamentals</b></div>
+    			<div class="item-explain">
+    				<p>
+              Host Weekly office hours, in-person doubt clarification sessions, and the grading of projects & assignments for CSC216
+              and heading CSC217 - Software Development Fundamentals Lab with a section of 30 students.
+              <br><br>
+              <b>Tech Stack</b>: &nbsp;Java, JUnit, Github.
+    			</p>
+    			</div>
+    		</li>
+
     		<li class="tl-item" ng-repeat="item in retailer_history">
     			<div class="timestamp">
     				June 2019 - July 2021
     				<br> 
     				Bangalore, India
     			</div>
-    			<div class="item-title">Ninjacart</div>
-    			<div class="item-detail">Software Engineer</div>
+    			<div class="item-title">
+            <!-- <a href="https://ninjacart.in/" target="_blank">Ninjacart</a> <br> -->
+            <img src="images/ninjacart.png" alt="Ninjacart" style="border-radius:15px; width:150px">
+          </div>
+    			<div class="item-detail"><b>Software Engineer</b></div>
     			<div class="item-explain">
     				<p>
-    					Architected back-end APIs for SCM Tech (fleet and driver management) including Onboarding, Verification, Facial Attendance, Communication, Ticketing and Tariff Calculation.<br><br>
-    					Designed and developed the backend service for Last Mile Delivery process using Java Spring and Dropwizard to standardize the entire logistic operations.<br><br>
+    					Architected backend APIs for SCM Tech (fleet and driver management) including Onboarding, Verification, Facial Attendance, Communication, Ticketing, Tariff Calculation and a microservice for Configuration Management.
+              <br><br>
+    					Designed and developed the backend service for Last Mile Delivery process using Java Spring and Dropwizard.
+              <br><br>
     					Primary developer for Real-time Live Location Tracking feature using Java Vertx and Apache Kafka that reduced the transit latency by 40% and increased the on-time delivery from 60% to 90%.<br><br>
-              Developed a micro service for Centralized Configuration Management to facilitate the deployment and scaling process.<br><br>
     					<b>Tech Stack</b>: &nbsp;Java, DropWizard, SpringBoot, MySQL
     			</p>
     			</div>
@@ -305,7 +350,7 @@
       <br>
       2021 - 2023
       <br>
-      <!-- GPA : 8.47 / 10 -->
+      GPA : 4.0 / 4.0
     </td>
   </tr>
 
@@ -328,6 +373,69 @@
     </td>
   </tr>
 </table>
+
+<hr class="pill">
+
+<!-- ***********************************************************************   SKILLS   ******************************************************************* -->
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+  <tr>
+    <td>
+    <sectionheading id="skills">&nbsp;&nbsp;Skills</sectionheading>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+  <tr>
+  	<td>
+  		<heading id="languages">&nbsp;&nbsp;Languages</heading>
+
+      <p align="justify">
+        <img src="images/py.png" alt="python" style="border-radius: 10%; width: 5%;"> 
+        <img src="images/java.png" alt="java" style="border-radius: 10%; margin-left: 2%; width: 5%;"> 
+        <img src="images/html.png" alt="html" style="border-radius: 10%; margin-left: 2%; width: 5%;"> 
+        <img src="images/css.png" alt="css" style="border-radius: 10%; margin-left: 2%; width: 5%;"> 
+        <img src="images/js.png" alt="js" style="border-radius: 10%; margin-left: 2%; width: 5%;"> 
+        <img src="images/typescript.svg" alt="ts" style="border-radius: 10%; margin-left: 2%; width: 5%;"> 
+        <img src="images/mysql.png" alt="mysql" style="border-radius: 10%; margin-left: 2%; width: 7%;"> 
+      </p>
+  	</td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+  <tr>
+  	<td>
+  		<heading id="frameworks">&nbsp;&nbsp;Frameworks</heading>
+      <p align="justify">
+        <img src="images/spring.png" alt="spring" style="border-radius: 10%; width: 10%;"> 
+        <img src="images/nodejs.png" alt="nodejs" style="border-radius: 10%; margin-left: 2%; width: 7%;"> 
+        <img src="images/vertx.webp" alt="vertx" style="border-radius: 10%; margin-left: 2%; width: 7%;"> 
+        <img src="images/dropwizard.png" alt="dropwizard" style="border-radius: 10%; margin-left: 2%; width: 10%;"> 
+        <img src="images/junit5-banner.png" alt="junit5-banner" style="border-radius: 10%; margin-left: 2%; width: 7%;"> 
+        <img src="images/numpy.png" alt="numpy" style="border-radius: 10%; margin-left: 2%; width: 10%;"> 
+        <img src="images/pandas.png" alt="pandas" style="border-radius: 10%; margin-left: 2%; width: 7%;"> 
+      </p>
+  	</td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+  <tr>
+  	<td>
+  		<heading id="frameworks">&nbsp;&nbsp;Tools and Platforms</heading>
+      <p align="justify">
+        <img src="images/linux.jpeg" alt="linux" style="border-radius: 10%; width: 10%;"> 
+        <img src="images/jenkins.png" alt="jenkins" style="border-radius: 10%; margin-left: 2%; width: 7%;"> 
+        <img src="images/github.png" alt="github" style="border-radius: 10%; margin-left: 2%; width: 7%;"> 
+        <img src="images/kafka.png" alt="kafka" style="border-radius: 10%; margin-left: 2%; width: 10%;"> 
+       
+      </p>
+  	</td>
+  </tr>
+</table>
+
 
 <hr class="pill">
 <!-- ***********************************************************************   PUBLICATIONS   ******************************************************************* -->
@@ -369,7 +477,7 @@
       </p>
 
       <div class="paper" id="moocversity_paper">
-      <a href="publications/moocversity.pdf" target="_blank">Pdf</a> /
+      <a href="publications/moocversity.pdf" target="_blank">Paper</a> /
       <a href="javascript:toggleblock('moocversity_abstract')">Abstract</a> /
       <a href="slides/moocversity-slides.pptx" target="_blank">Slides</a>	/
       <a href="https://github.com/vickymhs/MOOCs-Dropout-Prediction" target="_blank"> Code </a>
@@ -438,6 +546,143 @@
   <tr><td><sectionheading id="projects">&nbsp;&nbsp;Projects</sectionheading></td></tr>
 </table>
 
+<!-- Climate detection -->
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+  <tr>
+    <td width="33%" valign="top" align="center">
+    	<a href="images/anomaly.png" target="_blank">
+    		<img src="images/anomaly.png" alt="anomaly" width="80%" style="border-radius:15%;">
+    	</a>
+    </td>
+    <td width="67%" valign="top">
+      <p>
+      	<heading>Anomalous Climate Pattern Detection</heading>
+      	
+        <ul>
+          <li> A time series-based anomaly detection model that can identify false weather patterns was built with 96% precision-recall
+            score using RF, XGBoost and LSTM on 4M meteorological data points.</li>
+            <li> Ranked fifth out of 30 teams, demonstrating novelty by doing rigorous statistical and exploratory data analysis to deduce
+              spatial and temporal correlations to rearrange data.</li>
+        </ul>
+      </p>
+
+      <div class="paper" id="climate">
+      	<!-- <a href="https://github.com/vickymhs/Marketplace" target="_blank">Code </a>/  -->
+        <a href="slides/climate-anomaly.pdf" target="_blank">Paper</a> /
+        <a href="javascript:toggleblock('climate_abstract')">Abstract</a> /
+      	<a href="javascript:toggleblock('climate-tech')"> Tech Stack </a>
+      </div>
+
+      <p align="justify"> 
+      	<i id="climate-tech">
+      		<img src="images/py.png" alt="python" style="border-radius: 10%; width: 10%;"> 
+      		<img src="images/tf.png" alt="tensorflow" style="border-radius: 10%; margin-left: 5%; width: 10%;"> 
+          <img src="images/pytorch.png" alt="mysql" style="border-radius: 10%; margin-left: 5%; width: 10%;"> 
+        </i>
+      </p>
+
+      <p align="justify"> 
+      	<i id="climate_abstract">
+          The North Carolina Environment Climate Observing Network is a sensor network that collects data from 43 weather stations to assess 23 weather measure values.
+          An automatic Quality assurance (QA) system flags the measurements in the dataset, and they are manually inspected for mistakes.
+          The QC dataset is imbalanced, with low erroneous data and a majority of data that has been correctly flagged. 
+          This study presents with a novel approach of incorporating season-specific data and resampling the provided dataset to classify the erroneous data points. 
+          A robust classification based algorithm is experimented to work on the time series based imbalanced dataset. 
+          There is a strong dependency of how different weather measure changes with time. 
+          This poses a novel challenge of wrapping the measure values across each weather station over time periods to generate a predictive model. 
+          Since the distribution of erroneous points are very less, they pose a challenge of being considered as an outlier which is handled effectively in this study to correctly classify such imbalanced dataset.
+      	</i>
+      	</p>
+    
+    </td>
+  </tr>
+</table>
+
+<!-- Terrain Identification -->
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+  <tr>
+    <td width="33%" valign="top" align="center">
+    	<a href="images/terrain-2.png" target="_blank">
+    		<img src="images/terrain-2.png" alt="terrain" width="80%" style="border-radius:15%">
+    	</a>
+    </td>
+    <td width="67%" valign="top">
+      <p>
+      	<heading>Terrain Identification from Time Series Data</heading>
+      	
+        <ul>
+          <li> Performed resampling, windowing, generating time-dependent differential parameters and built a Conv-LSTM model with
+            TimeDistributed & 1D-Conv layer, Batch Normalization to distinguish between terrain types with an F1-Score of 95%. </li>
+        </ul>
+      </p>
+
+      <div class="paper" id="terrain">
+      	<!-- <a href="https://github.com/vickymhs/Marketplace" target="_blank">Code </a>/  -->
+        <a href="javascript:toggleblock('terrain_abstract')">Abstract</a> /
+      	<a href="javascript:toggleblock('terrain-tech')"> Tech Stack </a>
+      </div>
+
+      <p align="justify"> 
+      	<i id="terrain-tech">
+      		<img src="images/py.png" alt="python" style="border-radius: 10%; width: 10%;"> 
+      		<img src="images/tf.png" alt="tensorflow" style="border-radius: 10%; margin-left: 5%; width: 10%;"> 
+          <img src="images/pytorch.png" alt="pytorch" style="border-radius: 10%; margin-left: 5%; width: 10%;"> 
+        </i>
+      </p>
+
+      <p align="justify"> 
+      	<i id="terrain_abstract">
+          The goal of the study is to utilize inertial measurement units (IMU) acquired from the lower leg through sensors, to distinguish different types of terrain. 
+          The units have accelerometer and gyroscope readings gathered across the x,y, and z axes from a system linked to a prosthetic limb, and the terrains are widely labeled by specialists as follows:
+          (0) - indicates standing or walking in solid ground, 
+          (1) - indicates going down the stairs, 
+          (2) - indicates going up the stairs, 
+          (3) - indicates walking on grass.
+          By extracting some patterns in their motion, the data is rolled into smaller time windows and fed into temporal based neural network architectures for predicting the different types of terrains.
+      	</i>
+      	</p>
+    
+    </td>
+  </tr>
+</table>
+
+<!-- Waste Detection -->
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+  <tr>
+    <td width="33%" valign="top" align="center">
+    	<a href="images/waste.png" target="_blank">
+    		<img src="images/waste.png" alt="terrain" width="80%" style="border-radius:15%">
+    	</a>
+    </td>
+    <td width="67%" valign="top">
+      <p>
+      	<heading>Waste Detection using Faster RCNN and Mask R-CNN</heading>
+      	
+        <ul>
+          <li>A model that automatically detects different types of waste products into predefined classes.</li>
+          <li> Object detection and Mask segmentation principles were applied using Faster RCNN and Mask R-CNN to segment 860
+            manually annotated photos from 6 distinct classes achieving IoU above 95%. </li>
+        </ul>
+      </p>
+
+      <div class="paper" id="terrain">
+      	<a href="https://github.com/vickymhs/Trash-Segmentation" target="_blank">Code </a>/ 
+        <a href="slides/waste_slides.pdf" target="_blank">Slides</a>	/
+      	<a href="javascript:toggleblock('waste-tech')"> Tech Stack </a>
+      </div>
+
+      <p align="justify"> 
+      	<i id="waste-tech">
+      		<img src="images/py.png" alt="python" style="border-radius: 10%; width: 10%;"> 
+      		<img src="images/tf.png" alt="tensorflow" style="border-radius: 10%; margin-left: 5%; width: 10%;"> 
+          <img src="images/pytorch.png" alt="pytorch" style="border-radius: 10%; margin-left: 5%; width: 10%;"> 
+        </i>
+      </p>
+    
+    </td>
+  </tr>
+</table>
+
 <!-- Marketplace -->
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
   <tr>
@@ -487,9 +732,13 @@
       	<heading>Binge - Browser Extension for Streaming Platforms</heading>
       	
         <ul>
-          <li> Developed a Google Chrome Extension for Netflix that displays information like IMDb movie ratings, meta-critic reviews and cast details 
+          <li>
+            Created a Google Chrome Extension for Netflix utilizing open IMDb APIs, and added browser caching for faster data 
+            retrieval to display information on movie ratings, meta-critic reviews, and cast members.
+          </li>
+          <!-- <li> Developed a Google Chrome Extension for Netflix that displays information like IMDb movie ratings, meta-critic reviews and cast details 
             about the video content that are not available on the platforms by default. </li>
-          <li> Leveraged open source IMDb APIs to get information about the video, and browser level caching was implemented to speedup access to data. </li>
+          <li> Leveraged open source IMDb APIs to get information about the video, and browser level caching was implemented to speedup access to data. </li> -->
         </ul>
       </p>
 
@@ -660,6 +909,21 @@ hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
 hideblock('moocversity_abstract');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('terrain_abstract');
+  </script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('climate_abstract');
+  </script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('climate-tech');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('terrain-tech');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('waste-tech');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('marketplace-tech');
